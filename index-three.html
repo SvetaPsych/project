@@ -5,44 +5,49 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <link rel="stylesheet" href="styles/style.css">
+     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
+<header class="header container">
+    <a class="header__logo-wrap" href="index.html">
+      <img class="header__logo" src="images/psych.svg" alt="логотип" width="50">
+      <h1 class="header__title">Педагог-психолог</h1>
+    </a>
+    <nav class="header__menu">
+      <ul class="menu">
+          <li><a class="menu__link" href="index.html">Главная</a></li>
+          <li><a class="menu__link" href="index-two.html">Услуги</a></li>
+          <li><a class="menu__link" href="index-three.html">Обратная связь</a></li>
+      </ul>
+    </nav>
+</header>
 <main>
-     <div class="container">
-          <nav class="menu">
-              <ul class="menu-list">
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="index-two.html">Обо мне</a></li>
-                  <li><a href="index-three.html">Услуги</a></li>
-                  <li><a href="index-four.html">Контакты</a></li>
-              </ul>
-          </nav>
-      </div>
-      <h1>Прайс-лист</h1>
-      <div>
-        <h2>Онлайн-консультация</h2>
-        <p>Наши онлайн-консультации предоставляют возможность получить квалифицированную поддержку в комфортной обстановке вашего дома или любого другого удобного места.</p>
+  <section class="Contacts">
+    <div class="contact-container">
+      <h2>Оставьте ваш отзыв</h2>
+      <form action="smamzonova55@gmail.com" method="post"> 
+        <input type="text" id="name" name="name" placeholder="Ваше имя" ><br>
 
-          <ul>
-            <li><strong>Индивидуальный подход:</strong> Мы разберем ваши уникальные обстоятельства и потребности.</li>
-            <li><strong>Конфиденциальность:</strong> все консультации проводятся строго конфиденциально.</li>
-            <li><strong>Удобное время:</strong> вы можете выбрать удобное для вас время для созвона.</li>
-            <li><strong>Эффективное решение проблем:</strong> я помогу разобраться в сложных жизненных ситуациях, преодолеть стресс, тревогу.</li>
-          </ul>
-        <button>1500</button>
+        <textarea id="message" name="message" placeholder="Ваше пожелание"></textarea><br>
 
-        <h2>Профориентация</h2>
-        <p>Помощь в выборе профессии, основанная на анлизе интересов, способностей и личностных особенностей клиента.</p>
-        <button>500</button>
-
-        <h2>Развивающие занятия</h2>
-        <p>Организация занятий, направленных на развитие когнитивных функций, социальных навыков, эмоциональной регуляции и других важных аспектов психического развития.</p>
-        <button>1000</button>
-
-        <h2>Работа с родителями</h2>
-        <p> Консультации и рекомендации для родителей по вопросам воспитания, развития и образования детей.</p>
-        <button>750</button>
-      </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 </main>
+<footer class="footer container">
+  <div class="footer-left">
+    <p>Сайт создан Мамзоновой Светланой ПД-21</p>
+  </div>
+  <div class="footer-right">
+    <p class="contact-info">
+        <strong>Телефон:</strong> <a href="tel:+79020151725">+7 (902) 015-17-25</a>
+        <strong>Почта:</strong> <a href="email:smamzonova55@gmail.com">smamzonova55@gmail.com</a>
+    </p>
+    <div class="social-media">
+      <a href="https://vk.com/yoursunnylady" class="social-icon"><img src="images/vk.svg" alt="Вконтакте"></a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

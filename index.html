@@ -5,57 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
-<main>
- <div class="container">
-     <nav class="menu">
-         <ul class="menu-list">
-             <li><a href="index.html">Главная</a></li>
-             <li><a href="index-two.html">Обо мне</a></li>
-             <li><a href="index-three.html">Услуги</a></li>
-             <li><a href="index-four.html">Контакты</a></li>
-         </ul>
-     </nav>
-     <div class="text">
-        <div class="photo">
-            <img src="images/img1.jpg" alt="фото для главной">
+<header class="header container">
+  <a class="header__logo-wrap" href="index.html">
+    <img class="header__logo" src="images/psych.svg" alt="логотип" width="50">
+    <h1 class="header__title">Педагог-психолог</h1>
+  </a>
+  <nav class="header__menu">
+    <ul class="menu">
+        <li><a class="menu__link" href="index.html">Главная</a></li>
+        <li><a class="menu__link" href="index-two.html">Услуги</a></li>
+        <li><a class="menu__link" href="index-three.html">Обратная связь</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="main container">
+  <section class="About">
+    <h2 class="h2__title">Мамзонова Светлана</h2>
+    <div class="box">
+     <div class="slider">
+       <input type="radio" name="slider" id="slide1" checked>
+       <input type="radio" name="slider" id="slide2">
+       <input type="radio" name="slider" id="slide3">
+       <input type="radio" name="slider" id="slide4">
+
+       <div class="slides">
+           <div class="slide" id="s1">
+               <img src="images/img2.jpg" alt="Слайд 1">
+           </div>
+           <div class="slide" id="s2">
+               <img src="images/img3.jpg" alt="Слайд 2">
+           </div>
+           <div class="slide" id="s3">
+               <img src="images/img4.jpg" alt="Слайд 3">
+           </div>
+           <div class="slide" id="s4">
+            <img src="images/img1.jpg" alt="Слайд 4">
+           </div>
+       </div>
+
+       <div class="navigation">
+         <label for="slide1" class="dot"></label>
+         <label for="slide2" class="dot"></label>
+         <label for="slide3" class="dot"></label>
+         <label for="slide4" class="dot"></label>
+       </div>
+     </div>
+       <div class="Biography">
+         <h2>Биография</h2>
+         <p>Здравствуйте. Мне 21 год. Окончила 9 классов "Куженерской ООШ №1",
+            после поступила в медицинский колледж по специальности "Сестринское дело".
+            Сейчас учусь на 2 курсе Марийского Государственного университета на психолого-педагогическом факультете, специальность: Психология в образовании.<br>
+            Работаю с детьми дошкольного и школьного возраста , помогая им раскрыть свой потенциал и справиться со сложностями. 
+            Мои методы основаны на игровой терапии. Свяжитесь со мной для подробностей о моей работе и индивидуальной консультации!</p>
         </div>
-        <div class="name">
-            <h1>Мамзонова Светлана</h1>
-        </div>
-     </div>   
- </div>
+    </div>
+  </section>
 </main>
-<footer>
-    <div class="footer-part">
-        <h3 class="footertitle">КОНТАКТЫ</h3>
-        <div class="footer-top">
-          <ul class="footer_info">
-            <li class="footer-item">
-              <dl>
-                <dt>ОБЩИЕ</dt>
-                <dd><a href="tel:+79020151725">+79020151725</a></dd>
-                <dd><a href="#">smamzonova55@gmail.com</a></dd>
-              </dl>
-            </li>
-            <li class="footer-item">
-              <ul class="social-list">
-                <li class="social-item">
-                  <a href="#" class="">
-                    <img class="#" src="images/vk.svg" alt="вконтакте" width="25" height="25">
-                  </a>
-                </li>
-                <li class="social-item">
-                    <a href="#" class="">
-                      <img class="#" src="images/tg.svg" alt="телеграм" width="25" height="25">
-                    </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div> 
+<footer class="footer container">
+  <div class="footer-left">
+    <p>Сайт создан Мамзоновой Светланой ПД-21</p>
+  </div>
+  <div class="footer-right">
+    <p class="contact-info">
+        <strong>Телефон:</strong> <a href="tel:+79020151725">+7 (902) 015-17-25</a>
+        <strong>Почта:</strong> <a href="email:smamzonova55@gmail.com">smamzonova55@gmail.com</a>
+    </p>
+    <div class="social-media">
+      <a href="https://vk.com/yoursunnylady" class="social-icon"><img src="images/vk.svg" alt="Вконтакте"></a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

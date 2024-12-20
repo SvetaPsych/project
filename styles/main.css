@@ -1,0 +1,215 @@
+/*Стили для слайдера и биографии*/
+.About {
+    padding: 20px;
+}
+
+.box {
+    display: flex; 
+    margin: auto; 
+}
+
+.slider {
+    flex: 1; 
+    margin-right: 20px; 
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.Biography {
+    flex: 1; 
+    padding: 20px; 
+    max-height: 535px ;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+/* Подсветка активной точки */
+#slide1:checked ~ .navigation .dot:nth-child(1),
+#slide2:checked ~ .navigation .dot:nth-child(2),
+#slide3:checked ~ .navigation .dot:nth-child(3),
+#slide4:checked ~ .navigation .dot:nth-child(4) {
+    background-color: #717171;
+}
+
+/*Стили для Услуг*/
+.h2__title {
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 24px; 
+    color: black; 
+}
+
+.Services {
+    padding: 40px 20px; 
+    background-color: #f4f4f4; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.Services h2 {
+    text-align: center; 
+    font-size: 28px;
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.service-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.service {
+    flex: 1; 
+    margin: 0 10px; 
+    background-color: #fff;
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.Services h3 {
+    font-size: 24px; 
+    margin-top: 20px; 
+    color: #555; 
+}
+
+.Services p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #666; 
+}
+
+.Services ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+.Services li {
+    color: #666;
+}
+
+.Services button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    font-size: 16px;
+    cursor: pointer; 
+    margin-top: 10px; 
+    display: block; 
+    width: 100px; 
+    transition: background-color 0.3s; 
+}
+
+.Services button:hover {
+    background-color: #0056b3; 
+}
+
+/*Стили для обратной связи*/
+.Contacts {
+    padding: 40px 20px; 
+    background-color: #f4f4f4; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+}
+
+.contact-container {
+    max-width: 600px; 
+    margin: auto; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.Contacts h2 {
+    text-align: center; 
+    font-size: 28px;
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.Contacts input[type="text"],
+.Contacts textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.Contacts button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    width: 100%; 
+    transition: background-color 0.3s; 
+}
+
+.Contacts button:hover {
+    background-color: #0056b3; 
+}

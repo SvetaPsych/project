@@ -67,7 +67,7 @@ button {
   cursor: pointer; 
   margin-top: 10px; 
   display: block; 
-  width: 120px; 
+  width: 150px; 
   transition: background-color 0.3s; 
 }
 
@@ -75,3 +75,7 @@ button:hover {
   background-color: #0056b3; 
 }
 
+h2{
+  font-size: 20px;
+  font-weight: 500;
+}

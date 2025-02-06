@@ -90,7 +90,7 @@ input[type="radio"] {
 .section__title {
     text-align: center; 
     margin: 20px 0; 
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700; 
     color: black; 
 }
@@ -105,6 +105,7 @@ input[type="radio"] {
 .services h2 {
     text-align: center; 
     font-size: 28px;
+    font-weight: 500;
     margin-bottom: 20px; 
     color: #333; 
 }
@@ -127,13 +128,12 @@ input[type="radio"] {
 .services h3 {
     font-size: 24px; 
     margin-top: 20px; 
-    color: #555; 
 }
 
 .services p {
     font-size: 16px; 
+    font-weight: 300;
     line-height: 1.5; 
-    color: #666; 
 }
 
 .services ul {
@@ -141,8 +141,9 @@ input[type="radio"] {
     margin-left: 20px; 
 }
 
-.services li {
-    color: #666;
+.services li{
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /*Стили для обратной связи*/
@@ -183,6 +184,7 @@ input, textarea {
 .contacts h2 {
     text-align: center; 
     font-size: 28px;
+    font-weight: 500;
     margin-bottom: 20px; 
-    color: #333; 
+
 }

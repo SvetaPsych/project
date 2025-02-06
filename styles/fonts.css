@@ -1,0 +1,26 @@
+/* Light */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/font/ComfortaaLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/font/ComfortaaMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/font/ComfortaaBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 html,
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Comfortaa", serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -38,3 +38,40 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__link{
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(62, 120, 167);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+button {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 15px; 
+  font-size: 16px;
+  cursor: pointer; 
+  margin-top: 10px; 
+  display: block; 
+  width: 120px; 
+  transition: background-color 0.3s; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+

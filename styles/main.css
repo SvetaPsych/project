@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.Biography {
+.biography {
     flex: 1; 
     padding: 20px; 
     max-height: 535px ;
@@ -87,21 +87,22 @@ input[type="radio"] {
 }
 
 /*Стили для Услуг*/
-.h2__title {
+.section__title {
     text-align: center; 
     margin: 20px 0; 
-    font-size: 24px; 
+    font-size: 24px;
+    font-weight: 700; 
     color: black; 
 }
 
-.Services {
+.services {
     padding: 40px 20px; 
     background-color: #f4f4f4; 
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.Services h2 {
+.services h2 {
     text-align: center; 
     font-size: 28px;
     margin-bottom: 20px; 
@@ -123,47 +124,29 @@ input[type="radio"] {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.Services h3 {
+.services h3 {
     font-size: 24px; 
     margin-top: 20px; 
     color: #555; 
 }
 
-.Services p {
+.services p {
     font-size: 16px; 
     line-height: 1.5; 
     color: #666; 
 }
 
-.Services ul {
+.services ul {
     list-style-type: disc; 
     margin-left: 20px; 
 }
 
-.Services li {
+.services li {
     color: #666;
 }
 
-.Services button {
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 15px; 
-    font-size: 16px;
-    cursor: pointer; 
-    margin-top: 10px; 
-    display: block; 
-    width: 100px; 
-    transition: background-color 0.3s; 
-}
-
-.Services button:hover {
-    background-color: #0056b3; 
-}
-
 /*Стили для обратной связи*/
-.Contacts {
+.contacts {
     padding: 40px 20px; 
     background-color: #f4f4f4; 
     border-radius: 8px; 
@@ -172,44 +155,34 @@ input[type="radio"] {
 }
 
 .contact-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     max-width: 600px; 
     margin: auto; 
     background-color: #fff; 
     border-radius: 5px; 
     padding: 20px; 
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.Contacts h2 {
+form {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+}
+
+input, textarea {
+    width: 80%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.contacts h2 {
     text-align: center; 
     font-size: 28px;
     margin-bottom: 20px; 
     color: #333; 
-}
-
-.Contacts input[type="text"],
-.Contacts textarea {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    font-size: 16px;
-    box-sizing: border-box; 
-}
-
-.Contacts button {
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 15px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    width: 100%; 
-    transition: background-color 0.3s; 
-}
-
-.Contacts button:hover {
-    background-color: #0056b3; 
 }

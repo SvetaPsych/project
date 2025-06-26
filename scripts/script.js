@@ -64,7 +64,7 @@ document.querySelector('button').addEventListener('click', function() {
  */   
     
 // Динамическое меню 
-const headerMenu = document.querySelector('.header__menu');
+/*const headerMenu = document.querySelector('.header__menu');
 
 if (headerMenu) {
     const menuList = headerMenu.querySelector('.menu');
@@ -96,7 +96,7 @@ if (headerMenu) {
         menuList.insertAdjacentHTML('beforeend', menuItemHTML);
     }
     console.log('Навигационное меню создано с помощью JavaScript!');
-}
+}*/
 
 /*Блок схема находится в images/Блок-схема*/
 
